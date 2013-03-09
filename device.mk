@@ -131,7 +131,8 @@ endif
 
 	# zram
 PRODUCT_COPY_FILES += \
-    device/htc/saga/ramdisk/zram.sh:root/sbin/zram.sh
+    device/htc/saga/ramdisk/zram.sh:root/sbin/zram.sh \
+    device/htc/saga/ramdisk/initwlan.sh:root/sbin/initwlan.sh
 
 # stuff common to all HTC phones
 #$(call inherit-product, device/htc/common/common.mk)
