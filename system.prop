@@ -32,7 +32,7 @@ ro.ril.enable.a52=0
 ro.ril.enable.a53=1
 ro.ril.disable.fd.plmn.prefix=23402,23410,23411
 ro.ril.enable.sdr=1
-ro.ril.enable.amr.wideband=0
+ro.ril.enable.amr.wideband=1
 
 # saga RF team request
 ro.ril.enable.dtm=1

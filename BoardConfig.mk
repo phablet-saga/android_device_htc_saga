@@ -91,4 +91,12 @@ BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 BOARD_USE_NEW_LIBRIL_HTC := true
 
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun0/file
+
+# Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/saga/bluetooth
+BOARD_BLUEDROID_VENDOR_CONF := device/htc/saga/configs/libbt_vndcfg.txt
+
+# No SDK blobs
+BUILD_EMULATOR_SENSORS_MODULE := false
+BUILD_EMULATOR_GPS_MODULE := false
+

@@ -129,9 +129,8 @@ PRODUCT_COPY_FILES += \
     device/htc/msm7x30-common/msm7230/bcmdhd.ko:system/lib/modules/bcmdhd.ko
 endif
 
-	# zram
+	# phablet wifi
 PRODUCT_COPY_FILES += \
-    device/htc/saga/ramdisk/zram.sh:root/sbin/zram.sh \
     device/htc/saga/ramdisk/initwlan.sh:root/sbin/initwlan.sh
 
 # stuff common to all HTC phones
@@ -147,5 +146,8 @@ $(call inherit-product, device/htc/saga/media_a1026.mk)
 $(call inherit-product, device/htc/saga/media_htcaudio.mk)
 
 $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
+
+# lower the increment
+ADDITIONAL_BUILD_PROPERTIES += dalvik.vm.heapgrowthlimit=36m
 
 $(call inherit-product-if-exists, vendor/htc/saga/saga-vendor.mk)
